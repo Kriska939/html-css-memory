@@ -66,8 +66,9 @@ body {
         visibility: visible;
     }
 
-    h3:hover {
+    .col:hover h3 {
         visibility: visible;
+        color: orange;
     }
 
 
