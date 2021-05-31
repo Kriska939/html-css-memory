@@ -32,12 +32,14 @@ body {
 
     /* MAIN */
 
-
+    main .row {
+    margin-left: 10%;
+   }
     main .col {
         background-image: url(../img/pattern.png); 
         background-size: contain;
         float: left;
-        height: 220px;
+        height: 180px;
         width: calc(100% / 4 - 60px);
         margin-bottom: 40px;
         margin-left: 20px;
@@ -47,23 +49,61 @@ body {
 
     #special {
         background-image: url(../img/noun_air_balloon_3134741.png);
-        background-color: white; 
         background-repeat: no-repeat;
-        background-position: center;
+        background-color: white;
     }
 
     h3 {
      position: relative;
      top: 80%;
      font-size: 30px;
-     color: fuchsia;
      font-weight: 400;
-    }
-    main .no_margin {
-        margin-left: 0;
+     visibility: hidden;
     }
 
-    
+    #special h3 {
+        color: fuchsia;
+        visibility: visible;
+    }
+
+    h3:hover {
+        visibility: visible;
+    }
+
+
+    .col:hover:not(#special) {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: calc(100% / 4 - 60px); 
+    z-index: 1;
+    }
+
+    .bicycle:hover {
+        background-image:url(../img/noun_Bicycle_3134821.png);
+    }
+
+    .cruise:hover {
+        background-image: url(../img/noun_Cruise_Ship_3134824.png);
+    }
+
+    .submarine:hover {
+        background-image: url(../img/noun_Submarine_3134738.png);
+    }
+
+    .tractor:hover {
+        background-image: url(../img/noun_Tractor_3134797.png)
+    }
+
+    .tram:hover {
+        background-image: url(../img/noun_Tram_3134750.png);
+    }
 
 
     /* FOOTER */
+
+ p {
+     font-size: 20px;
+     margin-bottom: 40px;
+ }
