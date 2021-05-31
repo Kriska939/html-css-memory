@@ -7,16 +7,63 @@
 }
 
 body {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family: sans-serif;
     background-color: #add8e6;
     font-family: 'Nerko One', cursive;
+    text-align: center;
     }
 
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* HEADER */
+
     h1 {
-        text-align: center;
         color: white;
         font-size: 40px;
         font-weight: 500;
+        margin-bottom: 20px;
     }
+
+    /* MAIN */
+
+
+    main .col {
+        background-image: url(../img/pattern.png); 
+        background-size: contain;
+        float: left;
+        height: 220px;
+        width: calc(100% / 4 - 60px);
+        margin-bottom: 40px;
+        margin-left: 20px;
+        border-radius: 15px;
+        
+    }
+
+    #special {
+        background-image: url(../img/noun_air_balloon_3134741.png);
+        background-color: white; 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    h3 {
+     position: relative;
+     top: 80%;
+     font-size: 30px;
+     color: fuchsia;
+     font-weight: 400;
+    }
+    main .no_margin {
+        margin-left: 0;
+    }
+
+    
+
+
+    /* FOOTER */
