@@ -10,5 +10,13 @@ body {
     max-width: 800px;
     margin: 0 auto;
     font-family: sans-serif;
-    background-color: dodgerblue;
+    background-color: #add8e6;
+    font-family: 'Nerko One', cursive;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        font-weight: 500;
     }
