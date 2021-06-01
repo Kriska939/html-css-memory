@@ -7,12 +7,12 @@
 }
 
 body {
-    max-width: 1000px;
-    margin: 0 auto;
     font-family: sans-serif;
     background-color: #add8e6;
     font-family: 'Nerko One', cursive;
     text-align: center;
+    width: 1000px;
+    margin: 0 auto;
     }
 
     .clearfix::after {
@@ -32,17 +32,14 @@ body {
 
     /* MAIN */
 
-    main .row {
-    margin-left: 10%;
-   }
     main .col {
         background-image: url(../img/pattern.png); 
         background-size: contain;
         float: left;
-        height: 180px;
-        width: calc(100% / 4 - 60px);
+        height: 220px;
+        width: 22%;
         margin-bottom: 40px;
-        margin-left: 20px;
+        margin-left: 3%;
         border-radius: 15px;
         
     }
@@ -74,10 +71,10 @@ body {
 
     .col:hover:not(#special) {
     background-color: white;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    height: 180px;
-    width: calc(100% / 4 - 60px); 
+    height: 220px;
+    width: 22%; 
     z-index: 1;
     }
 
